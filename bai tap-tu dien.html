@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let TA=['hello','thank you','i love you'];
+  let TV=['xin chào','cảm ơn','anh yêu em'];
+  function timTu(){
+      let tukhoa=prompt('nhập từ cần tìm');
+      for (let i = 0; i < TA.length; i++){
+          if (TA[i]==tukhoa) return i;
+      }
+      return -1
+  }
+  function  translate(){
+      let i = timTu();
+      if(i==-1){
+          alert('không tìm thấy');
+      }else{
+          alert('từ tiếng việt tương ứng là :'+TV[i]);
+      }
+  }
+  translate();
+</script>
+</body>
+</html>
